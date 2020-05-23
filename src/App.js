@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import PriceDisplays from './components/PriceDisplays';
+import CurrencyConverter from './components/CurrencyConverter';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ConvertX from './components/ConvertX';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  render () {
+
+    var cryptocurrencies = ["BTC","ETH","LTC","XRP","USD","EUR","DAI","XLM","CRO","MKR","MANA","LINK","DGB","DOGE","THETA","REP","TZC"]
+
+    return (
+      <Router>
+        <div className="App container-flex">
+          <Navbar></Navbar>
+          <Switch>
+            <Route path="/" exact render={() => <PriceDisplays cryptocurrencies={cryptocurrencies}/>} />
+            <Route path="/currency-converter" exact render={() => <CurrencyConverter cryptocurrencies={cryptocurrencies} />} />
+            <Route path="/currency-converter/:id" render={(props) => <ConvertX cryptocurrencies={cryptocurrencies} {...props}/>}></Route>
+          </Switch>
+        
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

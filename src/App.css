@@ -1,38 +1,352 @@
+
+/* ----------- Base formatting for HTML ---------*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Assistant, sans-serif;
+  line-height: 1.4;
+  
+}
+
+
+/* -----------------------  Overriding the Bootstrap classes -----------------------  */
+
+.navbar {
+  background-color: white;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.30);
+  height: 54.5px;
+}
+
+.navbar-brand {
+  text-align: left;
+  padding-left: 8px;
+  padding-top: 6.4px;
+  padding-bottom: 10px;
+  background-color: #ffff4f;
+  width:90px;
+  border-radius: 36px;
+  height: 30px;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  border: 0.6px solid black;
+  transition-property: color border;
+  transition-duration: 0.4s;
+}
+
+.navbar-brand:hover {
+  box-shadow: 0px 0px 5px black;
+}
+
+.navbar-light .navbar-toggler:hover {
+  background-color: #ffff4f;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.nav-item {
+    padding: 0px 20px 0px 20px;
+    background-color: white;
+}
+
+.nav-link {
+  transition-property: color padding;
+  transition-duration: 0.5s;
+  font-family: Assistant, sans-serif;
+  font-weight: 400;
+  border: none;
+  background-color: white;
+}
+
+.nav-link:hover {
+  opacity: 100%;
+  color: #5e0CB3 !important;
+  padding-left: 10px;
+  text-decoration: none;
+  border: none !important;
+}
+
+
+.container {
+  padding-right:0;
+  padding-left:0;
+  margin-right:0;
+  margin-left:0;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.row {
+  padding-right:0;
+  padding-left:0;
+  margin: 0px;
+  width: 100%;
+}
+
+.col {
+  padding-right:0;
+  padding-left:0;
+  margin: 0px;
+}
+
+.list-group-item-action.active {
+   background-color: #23093d;
+   outline: none;
+   border: #23093d;
+}
+
+.dropdown-menu.show {
+  padding:0px;
+  margin-top: 225px;
+  margin-left: 10px;
+  overflow: scroll;
+  height: 300px;
+  background-color: #23093d;
+}
+
+.tickerLabels {
+  margin-top:20px;
+}
+
+/* -----------------------  Custom IDs ----------------------- */
+
+/* Navbar related */
+
+#navbarImage {
+  width:auto;
+  max-width: 20%;
+  height: auto;
+  padding-bottom: 3px;
+}
+
+#spinningCrypto {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  margin-bottom: 6px;
+}
+
+#searchIcon {
+  color: #5e0CB3;
+}
+
+#searchBarInput {
+  width: 100px;
+}
+
+#originalAmount{
+  margin: 5px 0px 15px 0px;
+}
+
+#convertedAmount {
+  margin: 5px 0px 15px 0px;
+}
+
+#equalsSign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0px;
+}
+
+#convertIntoDropdown {
+  margin-top: 5px;
+}
+
+
+/* ----------- App Classes ----------*/
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    to bottom right,
+    #5e0CB3, #d3a8ff
+  );
 }
 
-.App-link {
-  color: #61dafb;
+.appHeading {
+  text-align: center;
+  margin: 25px 0px 10px 0px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Assistant, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.appSubHeading {
+  margin: 10px 0px 20px 0px;
+  font-size: 18px;
+  font-family: Assistant, sans-serif;
+}
+
+.cryptoBox {
+  padding:5px;
+  border: 0.5px solid #ffffff;
+  margin:5px;
+  background: linear-gradient(
+    to bottom right,
+    #23093d,
+    #5e0CB3
+  );
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.cryptoTickers {
+  text-align: left;
+}
+
+.cryptoTicker {
+  text-align: center;
+}
+.cryptoPrices {
+  border-left: 1px solid #ffffff;
+  text-align: left;
+}
+
+.cryptoPriceChanges {
+  text-align: right;
+}
+
+.cryptoDirectionDiv {
+  vertical-align: middle;
+  text-align: right;
+  align-items: right;
+}
+
+.cryptoDirectionUp {
+  color: rgb(0, 163, 0);
+  text-align: right;
+  font-size: 28px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-bottom: 11px;
+}
+
+.cryptoDirectionDown {
+  color: red;
+  text-align: right;
+  font-size: 28px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-bottom: 8.5px;
+}
+
+.cryptoDirectionNone {
+  color: orange;
+  text-align: right;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-bottom: 5px;
+}
+
+.filterCrypto {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(
+  to bottom right,
+  #23093d,
+  #5e0CB3
+  );
+  border: 0.5px solid #ffffff;
+  color: white;
+  width: auto;
+}
+
+.filterCrypto:focus {
+  color: white;
+  background-color: #23093d;
+}
+
+.currencyOptions {
+  background-color: #5e0CB3;
+  color: white;
+  border: none;
+  transition-property: border padding;
+  transition-duration: 0.4s;
+}
+
+.currencyOptions:hover {
+  background-color: #23093d;
+  color: white;
+  padding-left: 20px;
+}
+
+.searchBar {
+  background-color: #ffffff;
+  border: none;
+
+}
+
+/*---------------- Custom scroll bar -----------*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #23093d; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d3a8ff; 
+  border: 0.4px solid #23093d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffff4f; 
+}
+
+::-webkit-scrollbar-corner {
+  background: #d3a8ff;
+}
+
+
+/*---------------- Conditional Formatting on Screen Size -----------*/
+
+
+@media(min-width:575.99px){
+
+  /* Changing the animation of navbar*/
+  .nav-link {
+      transition-property: color padding;
+      transition-duration: 0.5s;
+      font-family: Assistant, sans-serif;
+      font-weight: 400;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-item {
+    padding: 0px;
+  }
+  
+  .nav-link:hover {
+      opacity: 100%;
+      color: #5e0CB3 !important;
+      padding-left: 0px;
+      padding-top: 5px;
   }
 }
