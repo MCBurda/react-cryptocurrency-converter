@@ -17,6 +17,7 @@ class App extends React.Component {
         <div className="App container-flex">
           <Navbar></Navbar>
           <Switch>
+            <Route path="/react-cryptocurrency-converter" exact render={() => <PriceDisplays cryptocurrencies={cryptocurrencies}/>} />
             <Route path="/" exact render={() => <PriceDisplays cryptocurrencies={cryptocurrencies}/>} />
             <Route path="/currency-converter" exact render={() => <CurrencyConverter cryptocurrencies={cryptocurrencies} />} />
             <Route path="/currency-converter/:id" render={(props) => <ConvertX cryptocurrencies={cryptocurrencies} {...props}/>}></Route>
