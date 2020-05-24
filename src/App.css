@@ -60,12 +60,10 @@ body {
 }
 
 .nav-link {
-  transition-property: color padding;
+  transition-property: padding;
   transition-duration: 0.4s;
   font-family: Assistant, sans-serif;
   font-weight: 400;
-  border: none;
-  background-color: white;
   color: rgba(0,0,0,.5);
 }
 
@@ -74,7 +72,6 @@ body {
   color: #5e0CB3 !important;
   padding-left: 10px;
   text-decoration: none;
-  border: none !important;
 }
 
 
@@ -332,11 +329,8 @@ body {
 
   /* Changing the animation of navbar*/
   .nav-link {
-      transition-property: color padding;
-      transition-duration: 0.4s;
       font-family: Assistant, sans-serif;
       font-weight: 400;
-      color: rgba(0,0,0,.5);
   }
 
   .nav-item {
@@ -345,8 +339,8 @@ body {
   
   .nav-link:hover {
       opacity: 100% !important;
-      color: #5e0CB3 !important;
       padding-left: 0px;
       padding-top: 5px;
+      text-decoration: none;
   }
 }
