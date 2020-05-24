@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import IndividualDisplay from './IndividualDisplay';
+import Attribution from './Attribution';
 
 
 class ConvertX extends React.Component {
@@ -151,7 +152,7 @@ class ConvertX extends React.Component {
                 </div>
             </div>
                      
-            
+            <Attribution></Attribution>
         </div>    
       );
     }

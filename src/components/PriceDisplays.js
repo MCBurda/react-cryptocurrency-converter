@@ -5,6 +5,7 @@ import Header from './Header';
 import LoadingDisplay from './Loading';
 import ErrorDisplay from './Error';
 import IndividualDisplay from './IndividualDisplay';
+import Attribution from './Attribution';
 
 
 class PriceDisplays extends React.Component {
@@ -98,7 +99,7 @@ class PriceDisplays extends React.Component {
         // 
       return (
         <div>
-            <Header heading="Global Prices" subHeading="Track the different markets where cryptocurrencies are trading in one dashboard:"></Header>
+            <Header heading="Global Prices" subHeading={"Track the prices of cryptocurrencies trading around the world in one dashboard. Changes in price are based on the last 24 hours:"}></Header>
             <div className="row justify-content-center">
                 <DisplayNavigation searchCallback={this.displaySearch} filterCallback={this.displayFilter}></DisplayNavigation>
 
@@ -129,6 +130,7 @@ class PriceDisplays extends React.Component {
                 }
                 </Async>
             </div>
+            <Attribution></Attribution>
         </div>
     )
   }

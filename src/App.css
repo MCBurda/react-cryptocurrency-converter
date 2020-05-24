@@ -296,6 +296,13 @@ body {
 
 }
 
+.appSmallText {
+  font-size: 12px;
+  font-family: Assistant, sans-serif;
+  color: #23093d;
+  font-weight: 600;
+}
+
 /*---------------- Custom scroll bar -----------*/
 
 ::-webkit-scrollbar {
