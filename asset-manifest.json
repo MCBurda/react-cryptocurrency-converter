@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-cryptocurrency-converter/static/css/main.120767fe.chunk.css",
+    "main.css": "/react-cryptocurrency-converter/static/css/main.085bd587.chunk.css",
     "main.js": "/react-cryptocurrency-converter/static/js/main.1ff03759.chunk.js",
     "main.js.map": "/react-cryptocurrency-converter/static/js/main.1ff03759.chunk.js.map",
     "runtime-main.js": "/react-cryptocurrency-converter/static/js/runtime-main.23f57188.js",
@@ -8,16 +8,16 @@
     "static/js/2.2cecd46c.chunk.js": "/react-cryptocurrency-converter/static/js/2.2cecd46c.chunk.js",
     "static/js/2.2cecd46c.chunk.js.map": "/react-cryptocurrency-converter/static/js/2.2cecd46c.chunk.js.map",
     "index.html": "/react-cryptocurrency-converter/index.html",
-    "precache-manifest.db1c0b5f53adbfa37c5338f51aaed727.js": "/react-cryptocurrency-converter/precache-manifest.db1c0b5f53adbfa37c5338f51aaed727.js",
+    "precache-manifest.845edde036718999663c632d0f1241c0.js": "/react-cryptocurrency-converter/precache-manifest.845edde036718999663c632d0f1241c0.js",
     "service-worker.js": "/react-cryptocurrency-converter/service-worker.js",
-    "static/css/main.120767fe.chunk.css.map": "/react-cryptocurrency-converter/static/css/main.120767fe.chunk.css.map",
+    "static/css/main.085bd587.chunk.css.map": "/react-cryptocurrency-converter/static/css/main.085bd587.chunk.css.map",
     "static/js/2.2cecd46c.chunk.js.LICENSE.txt": "/react-cryptocurrency-converter/static/js/2.2cecd46c.chunk.js.LICENSE.txt",
     "static/media/coinspining looped 75percent slowed cropped.gif": "/react-cryptocurrency-converter/static/media/coinspining looped 75percent slowed cropped.ab646264.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.23f57188.js",
     "static/js/2.2cecd46c.chunk.js",
-    "static/css/main.120767fe.chunk.css",
+    "static/css/main.085bd587.chunk.css",
     "static/js/main.1ff03759.chunk.js"
   ]
 }
