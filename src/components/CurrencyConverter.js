@@ -7,6 +7,7 @@ class CurrencyConverter extends React.Component {
 
     render () {
 
+        // The Link tag acts as an <a> tag in HTML, linking to another URL (path in this case), where the Switch tag (in the App.js component) will render the right route
         return (
         <div>
             <Header heading="Convert Currencies" subHeading="Choose a currency that you own and find out how many units of a different currency you could buy."></Header>

@@ -17,6 +17,7 @@ class PriceDisplays extends React.Component {
         };
     }
 
+    // This function applies the upwards or downwards arrows to the price displays by adding classes for font awesome
     PriceIndicator = (priceChange) => {
         if (priceChange < 0) {
             return "cryptoDirectionDown fa fa-caret-down";
@@ -33,19 +34,23 @@ class PriceDisplays extends React.Component {
         }
     } 
     
+    // This is a callback function that is passed to the DisplayNavigation.js search bar. The callback sets the state.
     displaySearch = (searchTerm) => {
         this.setState({searchValue:searchTerm});
     }
 
+    // This is a callback function that is passed to the DisplayNavigation.js filter select tag. The callback sets the state.
     displayFilter = (filterValue) => {
         this.setState({filterOperation:filterValue});
     }
 
+    // This function filters the displayed prices based on the searchValue in the searchbar
     setKeys = (data) => {
         var filteredKeys = Object.keys(data).filter(keys => keys.includes(this.state.searchValue.toUpperCase())); 
         return this.filterKeys(data, filteredKeys, this.state.filterOperation);
     }
 
+    // This function applies sorting based on the chosen filter
     filterKeys = (data, filteredKeys, operation) => {
         var keys = filteredKeys;
         if (operation === 1) { // Ascending filter in DisplayNavigation.js
@@ -76,6 +81,7 @@ class PriceDisplays extends React.Component {
         return keys;
     }
 
+    // This function makes the array of cryptos into a string for the API URL
     stringifyAPI = (tickerArray) => {
         var apiString = "";
         tickerArray.forEach((ticker, index) => {

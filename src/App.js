@@ -10,8 +10,11 @@ class App extends React.Component {
 
   render () {
 
+    // This is a list of cryptocurrencies that is passed throughout the apps components to have a single point of truth
+    // You may change these, in order to display other currencies
     var cryptocurrencies = ["BTC","ETH","LTC","XRP","USD","EUR","DAI","XLM","CRO","MKR","MANA","LINK","DGB","DOGE","THETA","REP","TZC"]
 
+    // The Switch tag allows us to route users to different components, based on the URL they visit
     return (
       <Router>
         <div className="App container-flex">
