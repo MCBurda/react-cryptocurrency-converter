@@ -7,7 +7,7 @@ class Navbar extends React.Component {
 
         return (
             <nav className="navbar navbar-expand-sm sticky-top navbar-light">
-                <Link to="/"  className="navbar-brand"><img id="navbarImage" src={logo} alt="RT4coins brand" title="RT4Coins" />RT4Coins</Link>
+                <Link to="/"  className="navbar-brand"><img id="navbarImage" src={logo} alt="RT4coins brand" title="RT4Coins" />CoinTrack</Link>
                 <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                     <span className="navbar-toggler-icon" />
                 </button>

@@ -162,6 +162,37 @@ body {
   margin-top: 5px;
 }
 
+#convertFromDropdown {
+  margin-top: 5px;
+}
+
+#convertButton {
+  height: 39px;
+  padding: 0px 10px 0px 10px;
+  margin: 4.5px 0px 0px 0px;
+  background-color: #ffff4f;
+  border: 0.5px solid #23093d;
+}
+
+#convertIcon {
+  color: #5e0CB3;
+}
+
+#swapIcon {
+  color: #ffffff;
+}
+
+#swapDiv {
+  margin-top: 137px;
+}
+
+#swapButton {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  background-color: #5e0CB3;
+  border: 0.5px solid #23093d;
+}
 
 /* ----------- App Classes ----------*/
 
@@ -301,6 +332,10 @@ body {
   font-family: Assistant, sans-serif;
   color: #ffffff;
   font-weight: 500;
+}
+
+.pricePlot {
+  font-family: Assistant, sans-serif;
 }
 
 /*---------------- Custom scroll bar -----------*/

@@ -12,7 +12,7 @@ class App extends React.Component {
 
     // This is a list of cryptocurrencies that is passed throughout the apps components to have a single point of truth
     // You may change these, in order to display other currencies
-    var cryptocurrencies = ["BTC","ETH","LTC","XRP","USD","EUR","DAI","XLM","CRO","MKR","MANA","LINK","DGB","DOGE","THETA","REP","TZC"]
+    var cryptocurrencies = ["BTC","ETH","LTC","XRP","USD","EUR","DAI","XLM","CRO","MKR","MANA","LINK","DGB","DOGE","THETA","REP","TZC","STX","WAX"]
 
     // The Switch tag allows us to route users to different components, based on the URL they visit
     return (
@@ -24,6 +24,7 @@ class App extends React.Component {
             <Route path="/" exact render={() => <PriceDisplays cryptocurrencies={cryptocurrencies}/>} />
             <Route path="/currency-converter" exact render={() => <CurrencyConverter cryptocurrencies={cryptocurrencies} />} />
             <Route path="/currency-converter/:id" render={(props) => <ConvertX cryptocurrencies={cryptocurrencies} {...props}/>}></Route>
+            <Route render={() => <PriceDisplays cryptocurrencies={cryptocurrencies}/>} />
           </Switch>
         
         </div>

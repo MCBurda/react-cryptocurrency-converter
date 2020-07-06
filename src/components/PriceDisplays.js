@@ -100,7 +100,7 @@ class PriceDisplays extends React.Component {
 
     const loadPairs = () =>
         fetch("https://min-api.cryptocompare.com/data/pricemultifull?fsyms=" + this.stringifyAPI(this.props.cryptocurrencies) + "&tsyms=USD&extraParams=ITU-React-App&api_key=2177ce3aa5d8e41ccf48871cba2cea32a3ffcbb9e59dc6011de5fa6f8ec1b5fb")
-        .then(res => (res.ok ? res : Promise.reject(res)))
+        .then(res => (res.ok ? res : Promise.reject(console.log("Error:" + res))))
         .then(res => res.json());  
         // 
       return (

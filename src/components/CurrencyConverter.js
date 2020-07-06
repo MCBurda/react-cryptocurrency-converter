@@ -19,9 +19,11 @@ class CurrencyConverter extends React.Component {
 
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     {this.props.cryptocurrencies.map( (ticker) => {
-                        return(
-                            <Link key={ticker} className="currencyOptions dropdown-item" to={{pathname:`/currency-converter/${ticker}`}}>{ticker}</Link>
-                        )
+                        if (ticker !== "USD") {
+                            return(
+                                <Link key={ticker} className="currencyOptions dropdown-item" to={{pathname:`/currency-converter/${ticker}`}}>{ticker}</Link>
+                            )
+                        } 
                     }
                     )}
                 </div>
