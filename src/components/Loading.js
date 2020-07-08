@@ -1,5 +1,5 @@
 import React from 'react';
-import loadingGif from '../images/coinspining looped 75percent slowed cropped.gif';
+import loadingGif from '../images/coinspining.gif';
 
 
 class Loading extends React.Component {
