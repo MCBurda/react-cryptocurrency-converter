@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-cryptocurrency-converter/static/css/main.377a676a.chunk.css",
-    "main.js": "/react-cryptocurrency-converter/static/js/main.296d4584.chunk.js",
-    "main.js.map": "/react-cryptocurrency-converter/static/js/main.296d4584.chunk.js.map",
+    "main.js": "/react-cryptocurrency-converter/static/js/main.f8d9735f.chunk.js",
+    "main.js.map": "/react-cryptocurrency-converter/static/js/main.f8d9735f.chunk.js.map",
     "runtime-main.js": "/react-cryptocurrency-converter/static/js/runtime-main.62309109.js",
     "runtime-main.js.map": "/react-cryptocurrency-converter/static/js/runtime-main.62309109.js.map",
     "static/js/2.2bc96ca5.chunk.js": "/react-cryptocurrency-converter/static/js/2.2bc96ca5.chunk.js",
     "static/js/2.2bc96ca5.chunk.js.map": "/react-cryptocurrency-converter/static/js/2.2bc96ca5.chunk.js.map",
     "index.html": "/react-cryptocurrency-converter/index.html",
-    "precache-manifest.fdaca4606cfc80cf0d930eef2ca1f54a.js": "/react-cryptocurrency-converter/precache-manifest.fdaca4606cfc80cf0d930eef2ca1f54a.js",
+    "precache-manifest.2f8895618d2f5a037e8371e1d07c8da9.js": "/react-cryptocurrency-converter/precache-manifest.2f8895618d2f5a037e8371e1d07c8da9.js",
     "service-worker.js": "/react-cryptocurrency-converter/service-worker.js",
     "static/css/main.377a676a.chunk.css.map": "/react-cryptocurrency-converter/static/css/main.377a676a.chunk.css.map",
     "static/js/2.2bc96ca5.chunk.js.LICENSE.txt": "/react-cryptocurrency-converter/static/js/2.2bc96ca5.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.62309109.js",
     "static/js/2.2bc96ca5.chunk.js",
     "static/css/main.377a676a.chunk.css",
-    "static/js/main.296d4584.chunk.js"
+    "static/js/main.f8d9735f.chunk.js"
   ]
 }
