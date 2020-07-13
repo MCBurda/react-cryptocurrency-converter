@@ -194,6 +194,29 @@ body {
   border: 0.5px solid #23093d;
 }
 
+
+#tickerButton {
+  height: 38px;
+  width: 38px;
+  padding: 0px 10px 0px 10px;
+  margin: 0.5px 0px 0px 0px;
+  background: linear-gradient(
+    to bottom right,
+    #23093d,
+    #5e0CB3
+  );
+  border: 0.5px solid #ffffff;
+}
+
+#tickerIcon {
+  color: #ffffff;
+}
+
+#tickerInput {
+  margin: 0.5px 0px 0px 0px;
+  width: 160px;
+}
+
 /* ----------- App Classes ----------*/
 
 .App {

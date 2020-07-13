@@ -19,13 +19,19 @@ class PriceChart extends React.Component {
 
 
     // Update the State with the new graph data values, if the component updates with new props from CurrencyConverter 
-    componentDidUpdate = () => {
-        this.getGraphData();    
+    componentDidUpdate = (prevProps) => {
+        if (this.props.selectedCrypto !== prevProps.selectedCrypto || this.props.convertCrypto !== prevProps.convertCrypto) {
+            this.getGraphData();    
+        }
+    }
+
+    componentWillUnmount = () => {
+
     }
 
     getGraphData = () => {
         
-        var data = fetch("https://min-api.cryptocompare.com/data/v2/histoday?fsym=" + this.props.selectedCrypto + "&tsym=" + this.props.convertCrypto + "&limit=30&extraParams=ITU-React-App&api_key=2177ce3aa5d8e41ccf48871cba2cea32a3ffcbb9e59dc6011de5fa6f8ec1b5fb")
+        fetch("https://min-api.cryptocompare.com/data/v2/histoday?fsym=" + this.props.selectedCrypto + "&tsym=" + this.props.convertCrypto + "&limit=30&extraParams=ITU-React-App&api_key=2177ce3aa5d8e41ccf48871cba2cea32a3ffcbb9e59dc6011de5fa6f8ec1b5fb")
         .then(res => {return res.json()}) // If the asyc resolves as true, I apply another asyc function (json()) to structure my data and wait till that resolves as well
         .then(data => {
             

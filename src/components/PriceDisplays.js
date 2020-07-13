@@ -95,6 +95,10 @@ class PriceDisplays extends React.Component {
         return apiString;
     }
 
+    validateTicker = (ticker) => {
+        this.props.addCurrencies(ticker)
+    }
+
     render () {
 
 
@@ -107,7 +111,7 @@ class PriceDisplays extends React.Component {
         <div>
             <Header heading="Global Prices" subHeading={"Track the prices of cryptocurrencies trading around the world in one dashboard. Changes in price are based on the last 24 hours:"}></Header>
             <div className="row justify-content-center">
-                <DisplayNavigation searchCallback={this.displaySearch} filterCallback={this.displayFilter}></DisplayNavigation>
+                <DisplayNavigation clearValidation={this.props.clearValidation} tickerValidation={this.props.tickerValidation} validateTicker={this.validateTicker} searchCallback={this.displaySearch} filterCallback={this.displayFilter}></DisplayNavigation>
 
                 <Async promiseFn={loadPairs}>
                 {( {data, err, isLoading}) => {
